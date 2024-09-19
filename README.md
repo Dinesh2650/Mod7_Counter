@@ -3,11 +3,11 @@ Asynchronous Counter Modulo 7 - Counting Down
 Project Description
 This project involves designing and simulating an Asynchronous Counter that performs modulo 7 counting in a downward direction, i.e., counting from 6 to 0. The counter design uses JK flip-flops and a 7-segment display to visualize the count. This type of counter is useful in various digital systems, including timers and frequency dividers.
 
-However, the current issue faced in this design is that the counter starts from 7 and ends at 1, instead of the desired range from 6 to 0. This repository seeks feedback and suggestions to troubleshoot this problem.
+However, there's an issue in my design that the counter starts from 7 and ends at 1, instead of the desired range from 6 to 0. This repository seeks feedback and suggestions to troubleshoot this problem.
 
 Components Involved
 JK Flip-flops: These are used to build the asynchronous counter.
-AND Gates: Responsible for combining certain outputs to reset the counter once it reaches 0 (modulo 7 operation).
+AOI Gates: Responsible for combining certain outputs to reset the counter once it reaches 0 (modulo 7 operation).
 7-segment Display: This is used to visualize the current count from 6 down to 0.
 The design is implemented using a Falstad circuit simulator, and the circuit files are available for others to replicate and experiment with.
 
@@ -22,7 +22,7 @@ Currently, the counter counts from 7 to 1, which is not the desired behavior. Th
 Problem Statement:
 The counter is designed to decrement through a modulo-7 sequence but currently has a fault where it starts at 7 and decrements down to 1, instead of starting at 6 and going down to 0.
 
-Goal of the Project:
+What needs to be done:
 Correct the existing problem by ensuring that the counter starts at 6 and counts down to 0 (6 → 5 → 4 → 3 → 2 → 1 → 0).
 Identify any issues in the JK Flip-flop wiring or gate logic that may be causing the incorrect behavior.
 Achieve a fully functional asynchronous modulo-7 counter that operates correctly within the intended specifications.
@@ -46,11 +46,6 @@ Identify and correct the issue where the counter starts from 7 and ends at 1.
 Suggest modifications in the design, specifically in the reset logic or flip-flop control signals.
 Provide feedback or alternative designs for a more efficient solution.
 
-Future Goals
-Once the issue is resolved, the plan is to:
-Document the solution.
-Extend the counter to other modulo ranges.
-Implement the same design in other digital logic simulators like Logisim.
 
 Simulation Instructions
 Visit the Falstad Circuit Simulator.
